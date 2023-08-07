@@ -36,7 +36,11 @@ const config = {
     },
     resolve: {
         extensions: [".tsx", ".ts", ".js"],
-    },
+        alias: {
+            '@assets': path.resolve(currentDirectoryName, 'src/assets/'),
+            '@components': path.resolve(currentDirectoryName, 'src/components/'),
+        }
+    }
 };
 
 export default config;
