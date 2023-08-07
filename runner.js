@@ -14,6 +14,6 @@ files.forEach(file => {
 
         const jsFilePath = path.join(currentDirectoryName, 'dist', file);
 
-        execSync(`node ${jsFilePath}`, { stdio: 'inherit' });
+        execSync(`node "${jsFilePath}"`, { stdio: 'inherit' });
     }
 });
