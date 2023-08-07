@@ -1,5 +1,5 @@
 {
-  "name": "basic-setup-demo",
+  "name": "es6-module-and-typescript",
   "version": "0.0.1",
   "description": "webpack basic setup",
   "main": "index.js",
@@ -17,6 +17,8 @@
   "author": "",
   "license": "MIT",
   "devDependencies": {
+    "ts-loader": "^9.4.4",
+    "typescript": "^5.1.6",
     "webpack": "^5.88.2",
     "webpack-cli": "^5.1.4"
   }
