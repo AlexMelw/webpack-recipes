@@ -11,7 +11,8 @@ const config = {
     output: {
         clean: true,
         path: path.resolve(currentDirectoryName, "dist"),
-        filename: "[name].[contenthash].js"
+        filename: "[name].[contenthash].js",
+        publicPath: '/',
     },
     module: {
         rules: [
@@ -19,6 +20,17 @@ const config = {
                 test: /\.(ts|tsx)$/,
                 exclude: /node_modules/,
                 loader: "ts-loader",
+            },
+            // {
+            //     test: /\.(png|svg|jpg|jpeg|gif)$/i,
+            //     type: 'asset/resource',
+            // },
+            {
+                test: /\.(png|svg|jpg|jpeg|gif)$/,
+                loader: "file-loader", // or "url-loader"
+                options: {
+                    outputPath: "images", // example: /images/631e5cfc72297907c25a340a15d2471d.svg
+                },
             }
         ]
     },

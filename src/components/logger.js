@@ -1,7 +1,7 @@
 export default {
-    log: (message) => {
-        console.log("= = = = = = = = = = = = = = = = = = = =");
-        console.log(message);
-        console.log("=======================================");
+    log: (object) => {
+        console.log("= = = = = = = = = = = = = = = = = = = = = =");
+        console.log(object);
+        console.log("===========================================");
     }
 };
